@@ -1,5 +1,0 @@
-Malicious behaviour:
-
-Network level: reconnaissance, IED subscribe any possible publishers from the internal network.
-
-Physical process level: no immediate impacts

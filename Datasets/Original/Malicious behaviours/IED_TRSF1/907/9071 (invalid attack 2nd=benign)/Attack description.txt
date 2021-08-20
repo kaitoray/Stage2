@@ -1,0 +1,5 @@
+Malicious behaviour:
+
+Network level: Except the benign behaviours, IED_TRSF1 will also inject Pub_TRSF1 (0101) when a short-circuit happens around TRSF1, publish both open and close CB commands simultaneously with the same heartbeat while open CB commands (benign) always after the close commands (malicious).
+
+Physical process level:If a short circuit happens around transformer1, (CB1_66KV, CB_TRSF1, CB2_22KV) will be switching between closing and opening respectively. Over current protection still success.
