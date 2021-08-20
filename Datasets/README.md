@@ -8,7 +8,8 @@ Each Scenario consists of network traffic and system logs (simulink)
 
 **Final** are one-sheet datasets summarised from all benign and malicious scenarios. It includes six groups of datasets which are explained in details below:
 
-| Applied sliding window | Labelling methods | # of training scenarios | # of testing scenarios | # of training samples | # of testing samples | # of features | # of different labels |
+|  | Applied sliding window | Labelling methods | # of training scenarios | # of testing scenarios | # of training samples | # of testing samples | # of features | # of different labels |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Group 1 | No | Type 3 | 23 | 8 | 27919 | 9902 | 27 | 10 |
 | Group 2 | Time-based | Sequential labelling | 23 | 8 | various | various | 27 | 10 |
 | Group 3 | Quantity-based | Sequential labelling | 23 | 8 | various | various | 27 | 10 |
