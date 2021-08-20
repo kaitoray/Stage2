@@ -23,8 +23,8 @@ The testbed simulates both the primary plant and secondary plant of an electrici
 
 # Machine learning models for stage 2
 **A total of 5 models were created, include:**
-## Support Vector Machine (SVM)
-## K-nearest neighbour (KNN) 
-## Decision tree
-## BiLSTM without sliding window algorithms
-## BiLSTM with two types of sliding window algorithms
+* Support Vector Machine (SVM)
+* K-nearest neighbour (KNN) 
+* Decision tree
+* BiLSTM without sliding window algorithms
+* BiLSTM with two types of sliding window algorithms
