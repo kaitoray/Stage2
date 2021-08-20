@@ -10,8 +10,8 @@ The testbed simulates both the primary plant and secondary plant of an electrici
 **A total of 31 datasets were collected, include:**
 ## 15 benign behaviours (training datasets)
 * 1 behaviour under normal operation (when no events happen) -- label 0
-* 10 behaviours under emergency operation (when a line-to-line fault happens, related overcurrent protetcion triggered) -- label 201-210
-* 4 behaviours under emergency operation (when overcurrent protection failed; breaker failure protection triggered) -- label 211-214
+* 10 behaviours under emergency operation (when a line-to-line fault happens, related overcurrent protetcion triggered) -- label 101-110
+* 4 behaviours under emergency operation (when overcurrent protection failed; breaker failure protection triggered) -- label 111-114
 ## 8 malicious behaviours from IED1 (training datasets)
 * 2 false data injection attacks under normal operation -- label 901, 903
 * 2 message modification attacks under normal operation -- label 902, 904
