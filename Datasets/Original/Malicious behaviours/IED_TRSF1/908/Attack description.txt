@@ -1,0 +1,5 @@
+Malicious behaviour:
+
+Network level: If a short circuit happens around transformer1, the GOOSE payload of IED_TRSF1 is modified from (1110) to (0101, close CB1_66KV and CB_TRSF1, open CB2-22KV) to physcial process (Simulink) 
+
+Physical process level:If a short circuit happens around transformer1, (CB1_66KV and CB_TRSF1) will be still closed, over current protection fails.

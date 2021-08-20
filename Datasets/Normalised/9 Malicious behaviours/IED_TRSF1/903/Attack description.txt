@@ -1,0 +1,5 @@
+Malicious behaviour:
+
+Network level: Except the Benign publisher program, this malicious program will be also running and publishing 50 GOOSE packets (100ms heartbeat) mal_Pub_TRSF1 (1110: open CB1_66KV, CB2_66KV, CB_TRSF1, close CB2_22KV) to physcial process (Simulink) under normal operation every 1 mins
+
+Physical process level:There will be a energy disruption every 1 mins on Transformer1 line.

@@ -1,0 +1,5 @@
+Malicious behaviour:
+
+Network level: Modify the original GOOSE message Pub_TRSF2, change the GOOSE payloads from (1001) to (1110) every 1 mins and last for 5 seconds
+
+Physical process level:There will be a energy disruption every 1 mins on Transformer2 line.

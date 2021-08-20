@@ -1,0 +1,5 @@
+Malicious behaviour:
+
+Network level: Except the Benign behaviour, IED_TRSF2 also inject GOOSE message Pub_TRSF1 (open CB1_66KV and CB_TRSF1, close CB2_22KV) to physcial process (Simulink) if a short circuit happens around transformer2.
+
+Physical process level:If a short circuit happens around transformer2, (CB1_66KV, CB2_66KV, CB3_66KV, CB_TRSF1, CB_TRSF2) will be opened, (CB2_22KV) will be closed to isolate the fault, both transformer1 and transformer2 no longer provides any power load.

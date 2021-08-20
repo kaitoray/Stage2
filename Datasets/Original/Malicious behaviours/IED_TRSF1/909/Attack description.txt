@@ -1,0 +1,5 @@
+Malicious behaviour:
+
+Network level: If a short circuit happens around transformer1, GOOSE trip messages will be delayed for 10 seconds.
+
+Physical process level:If a short circuit happens around transformer1, over current protection will be delayed for 10 seconds and fails to protect in time.

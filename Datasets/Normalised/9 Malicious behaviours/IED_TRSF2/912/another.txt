@@ -1,0 +1,5 @@
+Malicious behaviour:
+
+Network level: publish worm to other IED via GOOSE's goID and Datset
+
+Physical process level:no immediate imapct
