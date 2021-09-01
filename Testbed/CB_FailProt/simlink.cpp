@@ -799,13 +799,13 @@ int main()
 
 	FILE *fp;
     	int i;
-    	int CBstval [5] = {0,0,0,0,0};
+    	int CBstval [5] = {0,0,0,0,0}; //{CB-TRSF1, CB-TRSF2, CB1-22KV, CB2-22KV, CB3-22KV}
     	
-    	CBstval [2] = stations_data[0].digitalOut[0];
-    	CBstval [3] = stations_data[0].digitalOut[1];
-    	CBstval [4] = stations_data[0].digitalOut[2];
-    	CBstval [0] = stations_data[0].digitalOut[3];
-    	CBstval [1] = stations_data[0].digitalOut[4];
+    	CBstval [2] = stations_data[0].digitalOut[0]; //open_CB1-22KV
+    	CBstval [3] = stations_data[0].digitalOut[1]; //open_CB2-22KV
+    	CBstval [4] = stations_data[0].digitalOut[2]; //open_CB3-22KV
+    	CBstval [0] = stations_data[0].digitalOut[3]; //open_CB-TRSF1
+    	CBstval [1] = stations_data[0].digitalOut[4]; //open_CB-TRSF2
  
     //Open File//
     	fp=fopen("TripRecord/TripFromPLC.csv","w");

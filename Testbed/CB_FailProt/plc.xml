@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Blank" productName="Blank" productVersion="1.0" creationDateTime="2016-05-18T21:14:07"/>
-  <contentHeader name="Blank Project" modificationDateTime="2021-04-13T12:00:53">
+  <contentHeader name="Blank Project" modificationDateTime="2021-08-31T19:10:41">
     <coordinateInfo>
       <fbd>
         <scaling x="10" y="10"/>
@@ -618,93 +618,6 @@
                 </variable>
               </outputVariables>
             </block>
-            <leftPowerRail localId="56" height="80" width="10" executionOrderId="0">
-              <position x="690" y="350"/>
-              <connectionPointOut formalParameter="">
-                <relPosition x="10" y="20"/>
-              </connectionPointOut>
-              <connectionPointOut formalParameter="">
-                <relPosition x="10" y="60"/>
-              </connectionPointOut>
-            </leftPowerRail>
-            <rightPowerRail localId="57" height="40" width="10" executionOrderId="0">
-              <position x="1080" y="350"/>
-              <connectionPointIn>
-                <relPosition x="0" y="20"/>
-                <connection refLocalId="58">
-                  <position x="1080" y="370"/>
-                  <position x="1020" y="370"/>
-                </connection>
-                <connection refLocalId="26">
-                  <position x="1080" y="370"/>
-                  <position x="1060" y="370"/>
-                  <position x="1060" y="320"/>
-                  <position x="1020" y="320"/>
-                </connection>
-              </connectionPointIn>
-            </rightPowerRail>
-            <coil localId="58" height="20" width="30" negated="false" executionOrderId="0">
-              <position x="990" y="360"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="59">
-                  <position x="990" y="370"/>
-                  <position x="790" y="370"/>
-                </connection>
-                <connection refLocalId="66">
-                  <position x="990" y="370"/>
-                  <position x="940" y="370"/>
-                  <position x="940" y="410"/>
-                  <position x="891" y="410"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="30" y="10"/>
-              </connectionPointOut>
-              <variable>Open_CB_TRSF1</variable>
-            </coil>
-            <contact localId="59" height="20" width="30" negated="false" executionOrderId="0">
-              <position x="760" y="360"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="56">
-                  <position x="760" y="370"/>
-                  <position x="700" y="370"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="30" y="10"/>
-              </connectionPointOut>
-              <variable>CB1_22KV_failure</variable>
-            </contact>
-            <contact localId="60" height="20" width="21" negated="false" executionOrderId="0">
-              <position x="760" y="400"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="56">
-                  <position x="760" y="410"/>
-                  <position x="700" y="410"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="21" y="10"/>
-              </connectionPointOut>
-              <variable>Open_CB_TRSF1</variable>
-            </contact>
-            <contact localId="66" height="20" width="21" negated="true" executionOrderId="0">
-              <position x="870" y="400"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="60">
-                  <position x="870" y="410"/>
-                  <position x="781" y="410"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="21" y="10"/>
-              </connectionPointOut>
-              <variable>Reset_All_CB</variable>
-            </contact>
             <inVariable localId="13" height="30" width="130" negated="false" executionOrderId="0">
               <position x="20" y="300"/>
               <connectionPointOut>
@@ -885,28 +798,6 @@
               </connectionPointIn>
               <expression>CB1_22KV_failure</expression>
             </outVariable>
-            <coil localId="26" height="20" width="30" negated="false" executionOrderId="0">
-              <position x="990" y="310"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="59">
-                  <position x="990" y="320"/>
-                  <position x="940" y="320"/>
-                  <position x="940" y="370"/>
-                  <position x="790" y="370"/>
-                </connection>
-                <connection refLocalId="66">
-                  <position x="990" y="320"/>
-                  <position x="940" y="320"/>
-                  <position x="940" y="410"/>
-                  <position x="891" y="410"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="30" y="10"/>
-              </connectionPointOut>
-              <variable>Open_CB2_22KV</variable>
-            </coil>
             <block localId="29" typeName="TON" instanceName="TON3" height="60" width="50" executionOrderId="0">
               <position x="470" y="510"/>
               <inputVariables>
@@ -1043,28 +934,6 @@
               </connectionPointIn>
               <expression>CB3_22KV_failure</expression>
             </outVariable>
-            <coil localId="51" height="20" width="30" negated="false" executionOrderId="0">
-              <position x="990" y="450"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="62">
-                  <position x="990" y="460"/>
-                  <position x="940" y="460"/>
-                  <position x="940" y="510"/>
-                  <position x="820" y="510"/>
-                </connection>
-                <connection refLocalId="64">
-                  <position x="990" y="460"/>
-                  <position x="940" y="460"/>
-                  <position x="940" y="550"/>
-                  <position x="891" y="550"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="30" y="10"/>
-              </connectionPointOut>
-              <variable>Open_CB2_22KV</variable>
-            </coil>
             <block localId="53" typeName="ABS" height="40" width="60" executionOrderId="0">
               <position x="220" y="490"/>
               <inputVariables>
@@ -1089,44 +958,19 @@
                 </variable>
               </outputVariables>
             </block>
-            <leftPowerRail localId="54" height="80" width="10" executionOrderId="0">
-              <position x="690" y="490"/>
-              <connectionPointOut formalParameter="">
-                <relPosition x="10" y="20"/>
-              </connectionPointOut>
-              <connectionPointOut formalParameter="">
-                <relPosition x="10" y="60"/>
-              </connectionPointOut>
-            </leftPowerRail>
-            <rightPowerRail localId="55" height="40" width="10" executionOrderId="0">
-              <position x="1080" y="490"/>
-              <connectionPointIn>
-                <relPosition x="0" y="20"/>
-                <connection refLocalId="61">
-                  <position x="1080" y="510"/>
-                  <position x="1020" y="510"/>
-                </connection>
-                <connection refLocalId="51">
-                  <position x="1080" y="510"/>
-                  <position x="1060" y="510"/>
-                  <position x="1060" y="460"/>
-                  <position x="1020" y="460"/>
-                </connection>
-              </connectionPointIn>
-            </rightPowerRail>
             <coil localId="61" height="20" width="30" negated="false" executionOrderId="0">
-              <position x="990" y="500"/>
+              <position x="990" y="440"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="62">
-                  <position x="990" y="510"/>
-                  <position x="820" y="510"/>
+                  <position x="990" y="450"/>
+                  <position x="820" y="450"/>
                 </connection>
                 <connection refLocalId="64">
-                  <position x="990" y="510"/>
-                  <position x="940" y="510"/>
-                  <position x="940" y="550"/>
-                  <position x="891" y="550"/>
+                  <position x="990" y="450"/>
+                  <position x="940" y="450"/>
+                  <position x="940" y="490"/>
+                  <position x="891" y="490"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -1135,12 +979,12 @@
               <variable>Open_CB_TRSF2</variable>
             </coil>
             <contact localId="62" height="20" width="30" negated="false" executionOrderId="0">
-              <position x="790" y="500"/>
+              <position x="790" y="440"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
-                <connection refLocalId="54">
-                  <position x="790" y="510"/>
-                  <position x="700" y="510"/>
+                <connection refLocalId="28">
+                  <position x="790" y="450"/>
+                  <position x="700" y="450"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -1149,12 +993,12 @@
               <variable>CB3_22KV_failure</variable>
             </contact>
             <contact localId="63" height="20" width="21" negated="false" executionOrderId="0">
-              <position x="750" y="540"/>
+              <position x="750" y="480"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
-                <connection refLocalId="54">
-                  <position x="750" y="550"/>
-                  <position x="700" y="550"/>
+                <connection refLocalId="28">
+                  <position x="750" y="490"/>
+                  <position x="700" y="490"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -1163,12 +1007,12 @@
               <variable>Open_CB_TRSF2</variable>
             </contact>
             <contact localId="64" height="20" width="21" negated="true" executionOrderId="0">
-              <position x="870" y="540"/>
+              <position x="870" y="480"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="63">
-                  <position x="870" y="550"/>
-                  <position x="771" y="550"/>
+                  <position x="870" y="490"/>
+                  <position x="771" y="490"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -1204,6 +1048,139 @@
               </connectionPointOut>
               <expression>T#1s</expression>
             </inVariable>
+            <leftPowerRail localId="28" height="160" width="10" executionOrderId="0">
+              <position x="690" y="350"/>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="20"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="60"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="100"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="140"/>
+              </connectionPointOut>
+            </leftPowerRail>
+            <rightPowerRail localId="33" height="120" width="10" executionOrderId="0">
+              <position x="1080" y="350"/>
+              <connectionPointIn>
+                <relPosition x="0" y="20"/>
+                <connection refLocalId="52">
+                  <position x="1080" y="370"/>
+                  <position x="1020" y="370"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="60"/>
+                <connection refLocalId="26">
+                  <position x="1080" y="410"/>
+                  <position x="1020" y="410"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="100"/>
+                <connection refLocalId="61">
+                  <position x="1080" y="450"/>
+                  <position x="1020" y="450"/>
+                </connection>
+              </connectionPointIn>
+            </rightPowerRail>
+            <coil localId="52" height="20" width="30" negated="false" executionOrderId="0">
+              <position x="990" y="360"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="56">
+                  <position x="990" y="370"/>
+                  <position x="820" y="370"/>
+                </connection>
+                <connection refLocalId="58">
+                  <position x="990" y="370"/>
+                  <position x="940" y="370"/>
+                  <position x="940" y="410"/>
+                  <position x="891" y="410"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="30" y="10"/>
+              </connectionPointOut>
+              <variable>Open_CB_TRSF1</variable>
+            </coil>
+            <contact localId="56" height="20" width="30" negated="false" executionOrderId="0">
+              <position x="790" y="360"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="28">
+                  <position x="790" y="370"/>
+                  <position x="700" y="370"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="30" y="10"/>
+              </connectionPointOut>
+              <variable>CB1_22KV_failure</variable>
+            </contact>
+            <contact localId="57" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="750" y="400"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="28">
+                  <position x="750" y="410"/>
+                  <position x="700" y="410"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Open_CB_TRSF1</variable>
+            </contact>
+            <contact localId="58" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="870" y="400"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="57">
+                  <position x="870" y="410"/>
+                  <position x="771" y="410"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Reset_All_CB</variable>
+            </contact>
+            <coil localId="26" height="20" width="30" negated="false" executionOrderId="0">
+              <position x="990" y="400"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="56">
+                  <position x="990" y="410"/>
+                  <position x="945" y="410"/>
+                  <position x="945" y="370"/>
+                  <position x="820" y="370"/>
+                </connection>
+                <connection refLocalId="58">
+                  <position x="990" y="410"/>
+                  <position x="891" y="410"/>
+                </connection>
+                <connection refLocalId="62">
+                  <position x="990" y="410"/>
+                  <position x="945" y="410"/>
+                  <position x="945" y="450"/>
+                  <position x="820" y="450"/>
+                </connection>
+                <connection refLocalId="64">
+                  <position x="990" y="410"/>
+                  <position x="940" y="410"/>
+                  <position x="940" y="490"/>
+                  <position x="891" y="490"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="30" y="10"/>
+              </connectionPointOut>
+              <variable>Open_CB2_22KV</variable>
+            </coil>
           </LD>
         </body>
       </pou>
